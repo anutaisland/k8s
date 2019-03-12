@@ -8,7 +8,7 @@ PAUSE_VERSION=3.1
 # 基本组件
 docker pull mirrorgooglecontainers/kube-apiserver-amd64:$K8S_VERSION
 docker pull mirrorgooglecontainers/kube-controller-manager:$K8S_VERSION
-docker pull mirrorgooglecontainers/kube-scheduler-amd64:$K8S_VERSION
+docker pull mirrorgooglecontainers/kube-scheduler:$K8S_VERSION
 docker pull mirrorgooglecontainers/kube-proxy:$K8S_VERSION
 docker pull mirrorgooglecontainers/etcd-amd64:$ETCD_VERSION
 docker pull mirrorgooglecontainers/pause:$PAUSE_VERSION
@@ -20,7 +20,7 @@ docker pull quay.io/coreos/flannel:$FLANNEL_VERSION
 # 修改tag
 docker tag mirrorgooglecontainers/kube-apiserveramd64:$K8S_VERSION k8s.gcr.io/kube-apiserver-amd64:$K8S_VERSION
 docker tag mirrorgooglecontainers/kube-controller-manager:$K8S_VERSION k8s.gcr.io/kube-controller-manager:$K8S_VERSION
-docker tag mirrorgooglecontainers/kube-scheduleramd64:$K8S_VERSION k8s.gcr.io/kube-scheduler-amd64:$K8S_VERSION
+docker tag mirrorgooglecontainers/kube-scheduler:$K8S_VERSION k8s.gcr.io/kube-scheduler:$K8S_VERSION
 docker tag mirrorgooglecontainers/kube-proxy:$K8S_VERSION k8s.gcr.io/kube-proxy:$K8S_VERSION
 docker tag mirrorgooglecontainers/etcd-amd64:$ETCD_VERSION k8s.gcr.io/etcd-amd64:$ETCD_VERSION
 docker tag mirrorgooglecontainers/pause:$PAUSE_VERSION k8s.gcr.io/pause:$PAUSE_VERSION
@@ -29,7 +29,7 @@ docker tag coredns/coredns:$DNS_VERSION k8s.gcr.io/coredns:$DNS_VERSION
 #删除冗余的images
 docker rmi mirrorgooglecontainers/kube-apiserver-amd64:$K8S_VERSION
 docker rmi mirrorgooglecontainers/kube-controller-manager:$K8S_VERSION
-docker rmi mirrorgooglecontainers/kube-scheduler-amd64:$K8S_VERSION
+docker rmi mirrorgooglecontainers/kube-scheduler:$K8S_VERSION
 docker rmi mirrorgooglecontainers/kube-proxy:$K8S_VERSION
 docker rmi mirrorgooglecontainers/etcd-amd64:$ETCD_VERSION
 docker rmi mirrorgooglecontainers/pause:$PAUSE_VERSION
