@@ -1,8 +1,8 @@
 #!/bin/bash
 K8S_VERSION=v1.13.4
-ETCD_VERSION=3.3.12
+ETCD_VERSION=3.2.24
 FLANNEL_VERSION=v0.11.0-amd64
-DNS_VERSION=1.4.0
+DNS_VERSION=1.2.6
 PAUSE_VERSION=3.1
 # 基本组件
 docker pull mirrorgooglecontainers/kube-apiserver:$K8S_VERSION
