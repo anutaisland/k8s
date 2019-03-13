@@ -9,7 +9,7 @@ docker pull mirrorgooglecontainers/kube-apiserver:$K8S_VERSION
 docker pull mirrorgooglecontainers/kube-controller-manager:$K8S_VERSION
 docker pull mirrorgooglecontainers/kube-scheduler:$K8S_VERSION
 docker pull mirrorgooglecontainers/kube-proxy:$K8S_VERSION
-docker pull mirrorgooglecontainers/etcd-amd64:$ETCD_VERSION
+docker pull mirrorgooglecontainers/etcd:$ETCD_VERSION
 docker pull mirrorgooglecontainers/pause:$PAUSE_VERSION
 docker pull coredns/coredns:$DNS_VERSION
 
