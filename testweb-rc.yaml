@@ -1,0 +1,17 @@
+kind: ReplicationController
+metadata:
+ name: testweb
+spec:
+ replicas: 1
+ selector:
+  app: testweb
+ template:
+  metadata:
+   labels:
+    app: testweb
+  spec:
+   containers:
+     - name: testweb
+       image: 10.10.18.19:5000/testweb #仓库镜像,或者其他本地镜像
+       ports:
+       - containerPort: 8080
